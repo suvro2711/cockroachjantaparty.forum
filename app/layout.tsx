@@ -27,11 +27,13 @@ export const metadata: Metadata = {
   title: "Arshola Janata Party — Voice of the Cha-Pipasu & Para-Politicians",
   description:
     "A satirical Bengal-themed political front for everyone the system called arshola. Five demands. Zero sponsors. One large, opinionated rowak.",
+  metadataBase: new URL("https://cockroachjantaparty.forum"),
   openGraph: {
     title: "Arshola Janata Party",
     description:
       "Voice of the Cha-Pipasu & Para-Politicians. Five demands. Zero sponsors.",
     type: "website",
+    url: "https://cockroachjantaparty.forum",
   },
 };
 
