@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 type Status = "idle" | "submitting" | "ok" | "error";
 type Challenge = { question: string; token: string };
-const MEMBER_COUNT_PLACEHOLDER = "10,000+";
 
 export default function JoinForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -91,14 +90,6 @@ export default function JoinForm() {
             alt="Arshola Janata Party logo"
             className="h-32 w-32 object-contain md:h-40 md:w-40"
           />
-          <div className="rounded-lg border border-ink/15 bg-white/75 px-4 py-2">
-            <p className="text-xs font-semibold uppercase tracking-widest text-alta">
-              Member count
-            </p>
-            <p className="mt-1 font-display text-2xl font-bold text-ink">
-              {MEMBER_COUNT_PLACEHOLDER}
-            </p>
-          </div>
           <h3 className="font-display text-2xl font-bold text-ink">
             You are part of the crowd now.
           </h3>
@@ -117,15 +108,6 @@ export default function JoinForm() {
       className="rounded-2xl bg-bone p-6 text-ink shadow-xl md:p-8"
     >
       <div className="grid gap-4">
-        <div className="rounded-lg border border-ink/15 bg-white/75 px-4 py-3 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-alta">
-            Member count
-          </p>
-          <p className="mt-1 font-display text-2xl font-bold text-ink">
-            {MEMBER_COUNT_PLACEHOLDER}
-          </p>
-        </div>
-
         <label className="block">
           <span className="mb-1 block text-sm font-semibold">
             Full name · নাম
