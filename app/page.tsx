@@ -87,19 +87,19 @@ export default function HomePage() {
         {/* Faded banner image, anchored to the right */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 right-0 w-3/4 opacity-20 md:w-1/2 md:opacity-40"
+          className="pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-20 md:w-1/2 md:opacity-40"
           style={{
             backgroundImage: "url(/cockroach-banner.png)",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "right center",
-            backgroundSize: "contain",
+            backgroundPosition: "50% top",
+            backgroundSize: "cover",
             maskImage:
               "linear-gradient(to left, black 55%, transparent 100%)",
             WebkitMaskImage:
               "linear-gradient(to left, black 55%, transparent 100%)",
           }}
         />
-        <div className="relative mx-auto max-w-6xl px-6 pt-10 pb-20 md:pt-16 md:pb-28">
+        <div className="relative mx-auto max-w-6xl px-6 pt-16 pb-28 md:pt-16 md:pb-28">
           <span className="stamp">A citizens’ platform · Bengal</span>
           <h1 className="mt-6 font-display text-5xl font-black leading-[1.05] text-ink md:text-7xl">
             Voice of the
